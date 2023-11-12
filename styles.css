@@ -1,0 +1,358 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(32, 30, 30);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    padding-top: 20px;
+    width: 200px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h2 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+span {
+    color: yellow;
+}
+
+
+#about {
+    padding: 80px 0;
+    color: rgb(0, 0, 0);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colon1 {
+    flex-basis: 35%;
+}
+
+.colon1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.colon2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.sub-para {
+    font-size: 20px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+
+.sk {
+    margin: 60px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.bar {
+    background: lightgray;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    background: rgb(0, 162, 255);
+    animation: html 8s linear forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.html span {
+    border: 1px solid rgb(0, 68, 255);
+    background-color: rgb(48, 73, 218);
+}
+
+.html span:hover {
+    transform: scale(1.29);
+}
+
+@keyframes html {
+    100% {
+        width: 65%;
+    }
+}
+
+.CSS {
+    background: blueviolet;
+    animation: CSS 8s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+.CSS span {
+    border: 1px solid blueviolet;
+    background-color: rgb(129, 61, 192);
+}
+
+.CSS span:hover {
+    transform: scale(1.29);
+}
+
+@keyframes CSS {
+    100% {
+        width: 50%;
+    }
+}
+
+.CPP {
+    background: rgb(47, 231, 255);
+    animation: CPP 8s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+.CPP span {
+    border: 1px solid rgb(47, 134, 255);
+    background-color: rgb(72, 130, 211);
+}
+
+.CPP span:hover {
+    transform: scale(1.29);
+}
+
+@keyframes CPP {
+    100% {
+        width: 60%;
+    }
+}
+
+.Python {
+    background: palevioletred;
+    animation: Python 8s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+.Python span {
+    border: 1px solid palevioletred;
+    background-color: rgb(216, 112, 185);
+}
+
+.Python span:hover {
+    transform: scale(1.29);
+}
+
+@keyframes Python {
+    100% {
+        width: 50%;
+    }
+}
+
+.Robotics {
+    background: rgb(112, 216, 176);
+    animation: Robotics 8s linear forwards;
+    animation-iteration-count: infinite;
+}
+
+.Robotics span {
+    border: 1px solid rgb(112, 216, 143);
+    background-color: rgb(112, 216, 152);
+}
+
+.Robotics span:hover {
+    transform: scale(1.29);
+}
+
+
+@keyframes Robotics {
+    100% {
+        width: 40%;
+    }
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #00a2ff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(204, 0, 255);
+    display: inline-block;
+    transition: transform 0.5s
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 84px 3px;
+    width: fit-content;
+    border: 1px solid #b81045;
+    padding: 17px 19px;
+    border-radius: 7px;
+    font-size: 20px;
+    transition: tranform 0.5s;
+}
+
+.btn:hover {
+    background-color: #cf3063;
+    transform: translateY(-4px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #d64d78;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    ;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copy {
+    color: white;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(34, 34, 34);
+    font-weight: 300;
+    margin-top: 20px;
+}
